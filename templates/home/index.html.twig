@@ -3,5 +3,9 @@
 {% block title %}Digital Event 2024{% endblock %}
 
 {% block body %}
-
+    {% for workshop in workshops %}
+        <p>#{{ workshop.number }}</p>
+        <p>{{ workshop.name }}</p>
+        <p>{{ workshop.description }}</p>
+    {% endfor %}
 {% endblock %}
